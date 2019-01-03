@@ -31,6 +31,13 @@ view: memorybynode {
     sql: ${TABLE}.timestamp_utc ;;
   }
 
+  measure: average_memory {
+    type: average
+    sql: ${memory} ;;
+    value_format: "##.#%"
+
+  }
+
 
 
   # # You can specify the table name if it's different from the view name:
