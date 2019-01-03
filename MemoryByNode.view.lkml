@@ -34,7 +34,7 @@ view: memorybynode {
   measure: average_memory {
     type: average
     sql: ${memory} ;;
-    value_format: "##.#%"
+    value_format_name: percent_1
 
   }
 
