@@ -33,8 +33,6 @@ view: mbbypod {
 
   measure: average_memory {
     type: average
-    sql: ${pod_memory}/100 ;;
-    value_format_name: percent_1
-
-  }
+    sql: ${pod_memory} ;;
+      }
 }
