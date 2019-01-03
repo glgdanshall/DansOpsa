@@ -8,7 +8,7 @@ include: "*.view.lkml"                       # include all views in this project
 explore: memorybynode{
 }
 
-explore:mbbypod{
+explore: mbbypod{
 }
 
 # # Select the views that should be a part of this model,
