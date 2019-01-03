@@ -6,7 +6,7 @@ view: memorybynode {
     type: string
     sql: ${TABLE}.kglobal_id ;;
   }
-  dimension: memory {
+  dimension: node_memory {
     description: "Memory for Node"
     type: string
     sql: ${TABLE}.node_memory ;;
@@ -33,7 +33,7 @@ view: memorybynode {
 
   measure: average_memory {
     type: average
-    sql: ${memory}/100 ;;
+    sql: ${node_memory}/100 ;;
     value_format_name: percent_1
 
   }
