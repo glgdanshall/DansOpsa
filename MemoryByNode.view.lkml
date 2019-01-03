@@ -11,6 +11,26 @@ view: memorybynode {
     type: string
     sql: ${TABLE}.node_memory ;;
   }
+  dimension: time {
+    description: "Time of sample"
+    type: string
+    sql: ${TABLE}.timestamp_utc ;;
+  }
+
+  dimension_group: timestamp_utc {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.timestamp_utc ;;
+  }
+
 
 
   # # You can specify the table name if it's different from the view name:
