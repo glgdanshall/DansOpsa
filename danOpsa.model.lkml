@@ -5,10 +5,12 @@ include: "*.view.lkml"                       # include all views in this project
 
 # Explores #
 
-explore: memorybynode {
-
-
+explore: memorybynode{
 }
+
+explore:mbbypod{
+}
+
 # # Select the views that should be a part of this model,
 # # and define the joins that connect them together.
 #
